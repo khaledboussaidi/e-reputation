@@ -1,0 +1,42 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: translateservice
+spec:
+  selector:
+    app: translate
+  ports:
+    - protocol: "TCP"
+      # Port accessible inside cluster
+      port: 80
+      # Port to forward to inside the pod
+      targetPort: translate-app-port
+      # Port accessible outside cluster
+      nodePort: 30003
+  clusterIP: 10.108.233.23
+  type: LoadBalancer
+
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appstranslate
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: translate
+  template:
+    metadata:
+      labels:
+        app: translate
+    spec:
+      containers:
+        - name: translate
+          image: boussaidi/translate:latest
+          ports:
+            - name: translate-app-port
+            - containerPort: 5002

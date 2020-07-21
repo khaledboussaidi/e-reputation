@@ -1,0 +1,19 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: authservice
+spec:
+  selector:
+    app: auth
+  ports:
+    - protocol: "TCP"
+      # Port accessible inside cluster
+      port: 80
+      # Port to forward to inside the pod
+      targetPort: auth-app-port
+      # Port accessible outside cluster
+      nodePort: 30006
+  clusterIP: 10.108.233.26
+  type: LoadBalancer
+---

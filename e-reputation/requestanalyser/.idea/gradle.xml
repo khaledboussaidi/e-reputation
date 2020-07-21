@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../kafka-2.3.1-src" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/clients" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/connect" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/connect/api" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/connect/basic-auth-extension" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/connect/file" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/connect/json" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/connect/runtime" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/connect/transforms" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/core" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/examples" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/generator" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/jmh-benchmarks" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/log4j-appender" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/examples" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/streams-scala" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/test-utils" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-0100" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-0101" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-0102" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-0110" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-10" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-11" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-20" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-21" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/streams/upgrade-system-tests-22" />
+            <option value="$PROJECT_DIR$/../kafka-2.3.1-src/tools" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

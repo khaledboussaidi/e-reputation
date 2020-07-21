@@ -1,0 +1,42 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: streamservice
+spec:
+  selector:
+    app: stream
+  ports:
+    - protocol: "TCP"
+      # Port accessible inside cluster
+      port: 80
+      # Port to forward to inside the pod
+      targetPort: stream-app-port
+      # Port accessible outside cluster
+      nodePort: 30001
+  clusterIP: 10.108.233.21
+  type: LoadBalancer
+
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appstream
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: stream
+  template:
+    metadata:
+      labels:
+        app: stream
+    spec:
+      containers:
+        - name: stream
+          image: boussaidi/stream:latest
+          ports:
+            - name: stream-app-port
+              containerPort: 5000

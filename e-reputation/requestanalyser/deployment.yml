@@ -1,0 +1,42 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: analyserservice
+spec:
+  selector:
+    app: analyser
+  ports:
+    - protocol: "TCP"
+      # Port accessible inside cluster
+      port: 80
+      # Port to forward to inside the pod
+      targetPort: analyser-port
+      # Port accessible outside cluster
+      nodePort: 30005
+  clusterIP: 10.108.233.25
+  type: LoadBalancer
+
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appsanalyser
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: analyser
+  template:
+    metadata:
+      labels:
+        app: analyser
+    spec:
+      containers:
+        - name: stream
+          image: boussaidi/analyser:latest
+          ports:
+            - name: analyser-port
+              containerPort: 8085

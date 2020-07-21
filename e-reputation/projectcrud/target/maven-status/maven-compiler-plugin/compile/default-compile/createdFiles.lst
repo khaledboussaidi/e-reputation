@@ -1,0 +1,11 @@
+com/ProjectCrud/models/Project.class
+com/ProjectCrud/Kafka/KafkaProducerConfig.class
+com/ProjectCrud/security/SecurityConstants.class
+com/ProjectCrud/security/AppSecurityConfig.class
+com/ProjectCrud/Controller/ProjectController.class
+com/ProjectCrud/services/ProjectBuilder.class
+com/ProjectCrud/security/JWTAuthorisationFilter.class
+com/ProjectCrud/services/ProjectServices.class
+com/ProjectCrud/services/ProjectService.class
+com/ProjectCrud/ProjectCrudApplication.class
+com/ProjectCrud/Controller/KafkaConsumer.class

@@ -1,0 +1,67 @@
+version: '3.3'
+services:
+
+    zookeeper:
+        image: confluentinc/cp-zookeeper:latest
+        ports:
+            - 2181:2181
+        environment:
+            ZOOKEEPER_CLIENT_PORT: 2181
+            ZOOKEEPER_TICK_TIME: 2000
+    kafka:
+            image: confluentinc/cp-kafka:latest
+            ports:
+                - 9092:9092
+            depends_on:
+                - zookeeper
+            environment:
+                KAFKA_BROKER_ID: 1
+                KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+                # For more details see See https://rmoff.net/2018/08/02/kafka-listeners-explained/
+                KAFKA_LISTENERS: LISTENER_INSIDE://0.0.0.0:29092,LISTENER_HOST://0.0.0.0:9092
+                KAFKA_ADVERTISED_LISTENERS: LISTENER_INSIDE://kafka:29092,LISTENER_HOST://localhost:9092
+                KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_INSIDE:PLAINTEXT,LISTENER_HOST:PLAINTEXT
+                KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_INSIDE
+                KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+                KAFKA_HEAP_OPTS: " -Xmx256m -Xms256m"
+    elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.1.1
+        ports:
+            - 9200:9200
+            - 9300:9300
+        environment:
+            discovery.type: single-node
+            http.cors.enabled: "true"
+            http.cors.allow-origin: "*"
+            ES_JAVA_OPTS: " -Xms256m -Xmx256m"
+        ulimits:
+            memlock:
+                soft: -1
+                hard: -1
+        volumes:
+            - data01:/usr/share/elasticsearch/data
+    
+    db:
+        image: mysql:5.7
+        restart: always
+        environment:
+            
+            # So you don't have to use root, but you can if you like
+            MYSQL_USER: 'khaled'
+            # You can use whatever password you like
+            MYSQL_PASSWORD: '98553393houssem'
+            # Password for root access
+            MYSQL_ROOT_PASSWORD: '98553393houssem'
+            MYSQL_DATABASE: 'db'
+        ports:
+            # <Port exposed> : < MySQL Port running inside container>
+            - '3308:3308'
+        
+        volumes:
+            - my-db:/var/lib/mysql              
+# Names our volume
+volumes:
+    my-db:
+    data01:
+        driver: local
+        

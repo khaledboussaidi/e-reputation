@@ -1,0 +1,5 @@
+flask
+textblob
+requests
+ibm_watson
+python-dateutil

@@ -1,0 +1,42 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: requestservice
+spec:
+  selector:
+    app: request
+  ports:
+    - protocol: "TCP"
+      # Port accessible inside cluster
+      port: 80
+      # Port to forward to inside the pod
+      targetPort: request-port
+      # Port accessible outside cluster
+      nodePort: 30004
+  clusterIP: 10.108.233.24
+  type: LoadBalancer
+
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apprequest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: request
+  template:
+    metadata:
+      labels:
+        app: request
+    spec:
+      containers:
+        - name: request
+          image: boussaidi/request:latest
+          ports:
+            - name: request-port
+              containerPort: 8086

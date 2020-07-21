@@ -1,0 +1,11 @@
+com/signup/service/MyUserDetailsService.class
+com/signup/modele/MyUser.class
+com/signup/repository/UserRespository.class
+com/signup/SignUpApplication.class
+com/signup/security/SecurityConstants.class
+com/signup/security/AppSecurityConfig.class
+com/signup/security/JWTAuthenticationFilter.class
+com/signup/controller/UserController.class
+com/signup/security/JWTAuthorisationFilter.class
+com/signup/service/UserService.class
+com/signup/controller/CorsFilter.class

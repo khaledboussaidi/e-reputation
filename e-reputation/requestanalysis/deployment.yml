@@ -1,0 +1,42 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: analyseservice
+spec:
+  selector:
+    app: analyse
+  ports:
+    - protocol: "TCP"
+      # Port accessible inside cluster
+      port: 80
+      # Port to forward to inside the pod
+      targetPort: analyse-app-port
+      # Port accessible outside cluster
+      nodePort: 30002
+  clusterIP: 10.108.233.22
+  type: LoadBalancer
+
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appanalyse
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: analyse
+  template:
+    metadata:
+      labels:
+        app: analyse
+    spec:
+      containers:
+        - name: analyse
+          image: boussaidi/analyse:latest
+          ports:
+            - name: analyse-app-port
+              containerPort: 5001

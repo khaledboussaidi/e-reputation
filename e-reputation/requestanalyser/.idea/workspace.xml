@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73ba0ba8-d0d8-476f-a042-192cb2d1eadd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/listener/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techprimers/kafka/springbootkafkaconsumerexample/SpringBootKafkaConsumerExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techprimers/kafka/springbootkafkaconsumerexample/config/KafkaConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techprimers/kafka/springbootkafkaconsumerexample/listener/KafkaConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techprimers/kafka/springbootkafkaconsumerexample/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/techprimers/kafka/springbootkafkaconsumerexample/SpringBootKafkaConsumerExampleApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../kafka-2.3.1-src">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1UR0YeGRoMDbDZ4rNKHXJxtoPU8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../signup" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/techprimers/kafka/springbootkafkaconsumerexample" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SpringBootKafkaConsumerExampleApplication">
+    <configuration name="SpringBootKafkaConsumerExampleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-1.11.0-openjdk-amd64" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.techprimers.kafka.springbootkafkaconsumerexample.SpringBootKafkaConsumerExampleApplication" />
+      <module name="requestanalyser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techprimers.kafka.springbootkafkaconsumerexample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kafka-2.3.1-src" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../kafka-2.3.1-src" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-boot-kafka-consumer-example [clean...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="gradlew" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/../kafka-2.3.1-src/gradlew" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/../kafka-2.3.1-src" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringBootKafkaConsumerExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-kafka-consumer-example" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techprimers.kafka.springbootkafkaconsumerexample.SpringBootKafkaConsumerExampleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootKafkaProducerExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-kafka-producer-example" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techprimers.kafka.springbootkafkaproducerexample.SpringBootKafkaProducerExampleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SpringBootKafkaConsumerExampleApplication" />
+      <item itemvalue="Gradle.kafka-2.3.1-src" />
+      <item itemvalue="Maven.spring-boot-kafka-consumer-example [clean...]" />
+      <item itemvalue="Shell Script.gradlew" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringBootKafkaConsumerExampleApplication" />
+        <item itemvalue="Gradle.kafka-2.3.1-src" />
+        <item itemvalue="Shell Script.gradlew" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73ba0ba8-d0d8-476f-a042-192cb2d1eadd" name="Default Changelist" comment="" />
+      <created>1575395035973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575395035973</updated>
+      <workItem from="1575395052669" duration="5869000" />
+      <workItem from="1575413662769" duration="678000" />
+      <workItem from="1575541491032" duration="1506000" />
+      <workItem from="1575727019212" duration="894000" />
+      <workItem from="1575893645962" duration="460000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="592" y="279" width="1011" height="689" key="#SpringBootKafkaConsumerExampleApplication" timestamp="1585156941757">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="592" y="279" width="1011" height="689" key="#SpringBootKafkaConsumerExampleApplication/67.27.1853.1053@67.27.1853.1053" timestamp="1585156941757" />
+    <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585157085299">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585157085299" />
+    <state x="1111" y="282" width="553" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1591369942238">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1111" y="282" width="553" height="579" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1591369942238" />
+    <state x="591" y="27" width="783" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586009157373">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="591" y="27" width="783" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586009157373" />
+    <state x="1189" y="302" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586022645021">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1189" y="302" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586022645021" />
+    <state x="776" y="243" width="424" height="485" key="FileChooserDialogImpl" timestamp="1588976731393">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="243" width="424" height="485" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1588976731393" />
+    <state width="1807" height="103" key="GridCell.Tab.0.bottom" timestamp="1592932771127">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="103" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1280.960@67.27.1853.1053" timestamp="1592932771127" />
+    <state width="1807" height="417" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1591411752356" />
+    <state width="1807" height="103" key="GridCell.Tab.0.center" timestamp="1592932771127">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="103" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1280.960@67.27.1853.1053" timestamp="1592932771127" />
+    <state width="1807" height="417" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1591411752355" />
+    <state width="1807" height="103" key="GridCell.Tab.0.left" timestamp="1592932771127">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="103" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1280.960@67.27.1853.1053" timestamp="1592932771127" />
+    <state width="1807" height="417" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1591411752355" />
+    <state width="1807" height="103" key="GridCell.Tab.0.right" timestamp="1592932771127">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="103" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1280.960@67.27.1853.1053" timestamp="1592932771127" />
+    <state width="1807" height="417" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1591411752355" />
+    <state x="526" y="211" width="924" height="685" key="Maven.ArtifactSearchDialog" timestamp="1586101155122">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="526" y="211" width="924" height="685" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586101155122" />
+    <state x="579" y="299" width="819" height="508" key="NewModule_or_Project.wizard" timestamp="1588976747927">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="579" y="299" width="819" height="508" key="NewModule_or_Project.wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1588976747927" />
+    <state x="67" y="188" width="1022" height="731" key="SettingsEditor" timestamp="1586036861771">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="67" y="188" width="1022" height="731" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1586036861771" />
+    <state x="649" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586270263963">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586270263963" />
+    <state x="1740" y="294" width="837" height="1010" key="dock-window-1" timestamp="1591369891849">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1740" y="294" width="837" height="1010" key="dock-window-1/67.27.1853.1053@67.27.1853.1053" timestamp="1591369891849" />
+    <state x="548" y="231" width="1372" height="797" key="new project wizard" timestamp="1588606709029">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="548" y="231" width="1372" height="797" key="new project wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1588606709029" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_boot_kafka_producer_example$SpringBootKafkaConsumerExampleApplication.ic" NAME="SpringBootKafkaConsumerExampleApplication Coverage Results" MODIFIED="1585156963699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.techprimers.kafka.springbootkafkaconsumerexample.*</FILTER>
+    </SUITE>
+  </component>
+</project>
