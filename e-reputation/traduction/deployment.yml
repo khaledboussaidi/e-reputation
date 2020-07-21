@@ -11,7 +11,7 @@ spec:
       # Port accessible inside cluster
       port: 80
       # Port to forward to inside the pod
-      targetPort: translate-app-port
+      targetPort: translate-stream-port
       # Port accessible outside cluster
       nodePort: 30003
   clusterIP: 10.108.233.23
@@ -38,5 +38,5 @@ spec:
         - name: translate
           image: boussaidi/translate:latest
           ports:
-            - name: translate-app-port
+            - name: translate-stream-port
             - containerPort: 5002

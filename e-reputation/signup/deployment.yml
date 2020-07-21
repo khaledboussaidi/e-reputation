@@ -16,5 +16,5 @@ spec:
         - name: auth
           image: boussaidi/auth:latest
           ports:
-            - name: auth-app-port
+            - name: auth-stream-port
               containerPort: 8084

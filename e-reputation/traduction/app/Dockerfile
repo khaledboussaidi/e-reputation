@@ -1,6 +1,6 @@
 # using a python small basic image
 FROM python:3.8
-# exposing our app port in docker internal network
+# exposing our stream port in docker internal network
 # update apk repo
 
 

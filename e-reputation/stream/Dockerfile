@@ -1,6 +1,6 @@
 # using a python small basic image
 FROM python:alpine
-# exposing our app port in docker internal network
+# exposing our stream port in docker internal network
 EXPOSE 5000
 # creates a dir for our application
 WORKDIR /app

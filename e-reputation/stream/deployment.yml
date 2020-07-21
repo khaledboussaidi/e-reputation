@@ -11,7 +11,7 @@ spec:
       # Port accessible inside cluster
       port: 80
       # Port to forward to inside the pod
-      targetPort: stream-app-port
+      targetPort: stream-stream-port
       # Port accessible outside cluster
       nodePort: 30001
   clusterIP: 10.108.233.21
@@ -38,5 +38,5 @@ spec:
         - name: stream
           image: boussaidi/stream:latest
           ports:
-            - name: stream-app-port
+            - name: stream-stream-port
               containerPort: 5000

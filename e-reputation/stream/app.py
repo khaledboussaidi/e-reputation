@@ -9,10 +9,10 @@ from functools import wraps
 
 from tweepy import StreamListener, API, Cursor, OAuthHandler, Stream
 
-ACCESS_TOKEN = "1168210697253244930-RSDdsMeJY1Wv5TwdCatAKrkg1E6GeZ"
-ACCESS_TOKEN_SECRET = "TjGj4YwnXVzv92k9B2Bvu7biqTZlTN6YVbw0SxJQARjmv"
-CONSUMER_KEY = "0kSn4U7h8g6cgscWcXmxD5Q0R"
-CONSUMER_SECRET = "kB5iqYrMagftdqbiw7uYBF9MUDa3hWR2PzrniiCdNsiA2BTW7b"
+ACCESS_TOKEN = "*****************************"
+ACCESS_TOKEN_SECRET = "*****************************************"
+CONSUMER_KEY = "***********************************"
+CONSUMER_SECRET = "***********************************"
 
 class TwitterClient:
     def __init__(self, twitter_user=None):
@@ -132,7 +132,7 @@ app = Flask(__name__)
 random=randint(0,100)
 
 listOfStreamer= dict()
-es = Elasticsearch([{'host':'a02e34849746b4f9898a61effd2fb4b1-77451157.eu-west-1.elb.amazonaws.com','port':9200}])
+es = Elasticsearch([{'host':'localhost','port':9200}])
 consumer = KafkaConsumer('stop',
     bootstrap_servers=['localhost:9092'],api_version=(0, 10, 1),
     auto_offset_reset='earliest',
@@ -167,7 +167,7 @@ def start(project_id, username, cle, language):
         return 'ok', 200
 
 @app.route('/project/launch/<int:project_id>/<string:username>/<string:cle>/<string:language>', methods=['GET'])
-#@required
+@required
 def do(project_id, username, cle, language):
     Thread(target=start, args=(project_id, username, cle, language)).start()
     return 'ok', 200
